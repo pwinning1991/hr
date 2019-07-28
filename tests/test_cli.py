@@ -18,7 +18,7 @@ def test_parser_succeeds_with_a_path(parser):
     With a path, the parser should exit with an error.
     """
     args = parser.parse_args(['/some/path'])
-    asser args.path == 'some/path'
+    assert args.path == 'some/path'
 
 def test_parser_export_flag(parser):
     """
