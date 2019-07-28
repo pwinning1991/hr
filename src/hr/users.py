@@ -49,7 +49,7 @@ def sync(users, existing_user_names=None):
     existing_user_names = (existing_user_names or _user_names())
     user_names = [user['name'] for user in users]
     for user in users:
-        if user['name'] no in existing_user_names:
+        if user['name'] not in existing_user_names:
             add(user)
         elif user['name'] in existing_user_names:
             update(user)
