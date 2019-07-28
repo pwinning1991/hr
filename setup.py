@@ -1,4 +1,4 @@
-from setuptools impot setup, find_packages
+from setuptools import setup, find_packages
 
 with open('README.rst', 'r') as f:
     readme = f.read()
